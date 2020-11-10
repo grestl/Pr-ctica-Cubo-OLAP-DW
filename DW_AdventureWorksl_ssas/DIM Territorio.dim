@@ -1,0 +1,160 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f6d51d45-6305-4045-ad00-07d4f734b2fe" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM Territorio</ID>
+  <Name>DIM Territorio</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5ebb0ffb-711d-4217-917e-9a7d25aa719c">
+    <DataSourceViewID>DW Adventure Worksl</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="89cc148a-6f85-4dbc-8e5a-b4a1c469dd9f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="41b8bd60-8054-4de4-9851-92f6819e4e60">
+      <ID>Id Territorio</ID>
+      <Name>Id Territorio</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a1ee86c-dcb3-4e7f-8f48-8b25f128e0f5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="666964fa-f713-45b4-b3a1-939cb36b2df3">
+            <TableID>dbo_DIM_Territorio</TableID>
+            <ColumnID>id_territorio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1b758105-dd0e-4afe-8a5a-94bacf51a738">
+          <AttributeID>Pais Territorio</AttributeID>
+          <Name>Pais Territorio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5abad82-15b7-4f51-99f3-1d678bb7dfe6">
+          <AttributeID>Provincia Territorio</AttributeID>
+          <Name>Provincia Territorio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="106cc943-a068-42fe-9d3c-5cd7f227dfa1">
+          <AttributeID>Ciudad Territorio</AttributeID>
+          <Name>Ciudad Territorio</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2fb6d56-166b-4591-8fe6-62ed27aa0b5b">
+          <AttributeID>Codigo Postal Territorio</AttributeID>
+          <Name>Codigo Postal Territorio</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53416797-8696-4786-8068-d703c71814db">
+      <ID>Pais Territorio</ID>
+      <Name>Pais Territorio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9cf2c87-35fd-4588-9700-2715124514a1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca47b8a8-0ef3-443b-a420-8840bf81bbdc">
+            <TableID>dbo_DIM_Territorio</TableID>
+            <ColumnID>pais_territorio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c7f3c109-9c59-46e5-999b-f37455fa9547">
+      <ID>Provincia Territorio</ID>
+      <Name>Provincia Territorio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="686cb39c-6d29-4600-a675-ee821d65cfb7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a41ef856-a95a-48da-8d7d-a92936eaebc5">
+            <TableID>dbo_DIM_Territorio</TableID>
+            <ColumnID>provincia_territorio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0d8d0333-1d92-4f0c-ba1f-0370f4b271bf">
+      <ID>Ciudad Territorio</ID>
+      <Name>Ciudad Territorio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f242a889-d236-433f-86f1-a17a2a8f9ca8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddcd74aa-ccc8-456c-aaff-6642ab7c9702">
+            <TableID>dbo_DIM_Territorio</TableID>
+            <ColumnID>Ciudad_territorio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e8bf297c-9cec-4c19-9bf0-1131f6effb0e">
+      <ID>Codigo Postal Territorio</ID>
+      <Name>Codigo Postal Territorio</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6ae5087b-d6f2-4262-83a4-2573db138a23">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49040a80-6b59-4eeb-8b17-83a42b59e447">
+            <TableID>dbo_DIM_Territorio</TableID>
+            <ColumnID>codigoPostal_territorio</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

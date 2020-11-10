@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>DW_AdventureWorksl_ssas</Database>
+    <Server>DESKTOP-GAGF56B</Server>
+    <ConnectionString>Data Source=DESKTOP-GAGF56B;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>9RuyqTLpRc1ds61/4Z69Biq2/Cc=8/11/2020 23:52:298/11/2020 23:32:51</TimeStamp>
+        <ID>
+          <String>DW Adventure Worksl</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>ZEcv8xDqBdqrKwLXN8FcVLXVKYs=8/11/2020 23:33:268/11/2020 23:33:25</TimeStamp>
+        <ID>
+          <String>DW Adventure Worksl</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3wzQmXVK75oTE3j6y7iRe5Kl4Dw=8/11/2020 23:33:578/11/2020 23:33:57</TimeStamp>
+        <ID>
+          <String>DIM Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B1OnO6es1LnwaW0gMS+RXC615I0=8/11/2020 23:34:108/11/2020 23:34:10</TimeStamp>
+        <ID>
+          <String>DIM Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6wPnmB6+YQB/HDyRAhF2wTBjC8Y=8/11/2020 23:34:268/11/2020 23:34:26</TimeStamp>
+        <ID>
+          <String>DIM Territorio</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CKI9H84/xkXP0/O5EISs2+xsgA0=8/11/2020 23:34:408/11/2020 23:34:40</TimeStamp>
+        <ID>
+          <String>Dim Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Q/C4aDq+DIg95nxJREtdFFtylwQ=8/11/2020 23:36:328/11/2020 23:36:32t9/SCvk448GLjWDqf6otzpCMSk8=8/11/2020 23:36:328/11/2020 23:36:32</TimeStamp>
+        <ID>
+          <String>DW Adventure Worksl</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Njyu6DAeh+Dm01/Vkv19+2CvlMs=8/11/2020 23:30:458/11/2020 23:30:45</TimeStamp>
+      <ID>
+        <String>DW_AdventureWorksl_ssas</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-11-09T04:52:37.446667Z</LastDeployed>
+</DeploymentSnapshot>
